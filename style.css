@@ -1,0 +1,849 @@
+/* * */
+* {
+  scroll-behavior: smooth;
+  font-family: sans-serif;
+}
+
+body {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.invisible {
+	display: none;
+}
+
+h2 {
+	font-size: 2.75rem;
+	text-align: center;
+  margin: 0 auto 2rem;
+  width: 100%;
+  max-width: 45vw;
+  padding: 1rem 0 .5rem;
+  color: black;
+  border-bottom: 3px solid #f88379;
+  max-width: 35rem;
+}
+
+p {
+	font-size: 1.75rem;
+  line-height: 2.19rem;
+}
+
+.calltoaction {
+	text-decoration: none;
+	text-align: center;
+	color: white;
+	font-size: 2.75rem;
+  background-color: #f88379;
+	display: block;
+	height: 5rem;
+	width: 18rem;
+	padding: 1rem;
+	border-radius: 2.5rem;
+	margin: 2rem auto 0;
+  transition: all .7s;
+}
+
+.maakafspraak {
+	width: 30rem;
+}
+
+.calltoaction:hover {
+	text-decoration: underline;
+}
+/* * */
+
+
+
+
+
+/* HEADER */
+header {
+	width: 100vw;
+  height: 8rem;
+  margin: 0 auto;
+  background-color: #f88379;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+nav {
+  padding: 1.5rem;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.logo {
+  background-image: url(afbeeldingen/logo.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+	height: 5rem;
+	width: 5rem;
+	margin-right: auto;
+}
+
+.burger {
+	background-image: url(afbeeldingen/burger.svg);
+	background-size: contain;
+	height: 3rem;
+	width: 3rem;
+	cursor: pointer;
+}
+
+.headmenufs {
+  display: none;
+}
+/* HEADER */
+
+
+
+
+
+/* MAIN */
+/* MENU */
+table {
+  text-align: center;
+  width: 100vw;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+}
+
+.headmenumob {
+  font-size: 2rem;
+  position: fixed;
+  top: 8rem;
+  z-index: 100;
+}
+
+.submenumob {
+  font-size: 1.5rem;
+  transition: all .2s;
+}
+
+table a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  height: 6rem;
+  border-bottom: 1px solid gainsboro;
+  transition: all .2s;
+  padding-top: 3rem;
+}
+.submenumob a {
+  margin-left: 1rem;
+  margin-right: 1rem;
+  height: 4rem;
+  padding-top: 2rem;
+}
+
+
+a:hover {
+  border-bottom: 1px solid #f88379;
+}
+
+
+.containssub {
+  position: relative;
+}
+
+.triangledown {
+  width: 0;
+  height: 0;
+  border-left: 7.5px solid transparent;
+  border-right: 7.5px solid transparent;
+  border-top: 15px solid black;
+  position: absolute;
+  top: 22.5px;
+  left: 22.5px;
+  transform: rotate(90deg);
+  transition: all .2s;
+}
+
+.bgforarrow {
+  height: 6rem;
+  width: 6rem;
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-bottom: 1px solid gainsboro;
+}
+
+.bgforarrow:hover {
+  border-bottom: 1px solid #f88379;
+  cursor: pointer;
+}
+/* MENU */
+
+
+
+
+
+/* FLOWERSLIDER */
+#flowerslider {
+	height: 65vw;
+  max-height: 70rem;
+  margin: 8rem auto -3rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.flowersliderarrow {
+	position: absolute;
+  display: inline-block;
+  border-left: .75rem solid rgba(248, 131, 121, .5);
+  border-bottom: .75rem solid rgba(248, 131, 121, .5);
+	height: 2rem;
+	width: 2rem;
+	top: 50%;
+	cursor: pointer;
+  z-index: 2;
+}
+
+.pointingleft {
+	transform: rotate(45deg);
+	left: 4vw;
+}
+
+.pointingright {
+	transform: rotate(225deg);
+	right: 4vw;
+}
+
+#flowerslider p {
+  background-color: rgba(248, 131, 121, .5);
+  height: 6rem;
+  width: 100%;
+  padding: 2rem;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  display: inline;
+  transition: all .7s;
+}
+
+#flowerslider p:nth-of-type(2) {
+  left: 100%;
+}
+
+#flowerslider img {
+  display: inline;
+  width: 100%;
+  transition: all .7s;
+  position: absolute;
+}
+
+#flowerslider img:nth-of-type(2) {
+  left: 100%;
+}
+#flowerslider img:nth-of-type(3) {
+  left: 200%;
+}
+/* FLOWERSLIDER */
+
+
+
+/* INBAR, BLOEMIST, BOEKETTEN, VORMEN, JUWELEN, HUWELIJK, EVENTS & WORKSHOPS */
+#inbar, #bloemist, #boeketten, #vormen, #juwelen, #huwelijk, #events, #workshops {
+	width: 95vw;
+  max-width: 100rem;
+  margin: 0 auto -3rem;
+  padding-top: 10rem;
+}
+
+#inbar .outerframe, #bloemist .outerframe, #boeketten .outerframe, #vormen .outerframe, #juwelen .outerframe, #huwelijk .outerframe, #events .outerframe, #workshops .outerframe {
+	height: 60vw;
+  max-height: 60rem;
+  position: relative;
+  margin-bottom: 3vw;
+}
+
+#inbar .innerframe, #bloemist .innerframe, #boeketten .innerframe, #vormen .innerframe, #juwelen .innerframe, #huwelijk .innerframe, #events .innerframe, #workshops .innerframe {
+	height: 60vw;
+  max-height: 60rem;
+	overflow: hidden;
+}
+
+#inbar .sectionimg {
+  background-image: url(afbeeldingen/inbar.jpg);
+}
+#bloemist .sectionimg {
+  background-image: url(afbeeldingen/bloemist.jpg);
+}
+#boeketten .sectionimg {
+  background-image: url(afbeeldingen/boeketten.jpg);
+}
+#vormen .sectionimg {
+  background-image: url(afbeeldingen/vormen.jpg);
+}
+#juwelen .sectionimg {
+  background-image: url(afbeeldingen/juwelen.jpg);
+}
+#huwelijk .sectionimg {
+  background-image: url(afbeeldingen/huwelijk.jpg);
+}
+#events .sectionimg {
+  background-image: url(afbeeldingen/events.jpg);
+}
+#workshops .sectionimg {
+  background-image: url(afbeeldingen/workshops.jpg);
+}
+
+.sectionimg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* INBAR, BLOEMIST, BOEKETTEN, VORMEN, JUWELEN, HUWELIJK, EVENTS & WORKSHOPS */
+
+
+
+/* MENUKAART */
+.slidermenukaart {
+	height: 65vw;
+  max-height: 70rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 3vw;
+}
+
+.slidermenukaart img {
+  display: inline;
+  width: 100%;
+  transition: all .7s;
+  position: absolute;
+}
+
+.slidermenukaart img:nth-of-type(2) {
+  left: 100%;
+}
+.slidermenukaart img:nth-of-type(3) {
+  left: 200%;
+}
+
+#menukaart {
+	width: 100vw;
+  margin: 0 auto -3rem;
+  padding-top: 10rem;
+}
+#menukaart p {
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*
+#menukaart {
+	width: 95vw;
+  max-width: 100rem;
+  margin: 0 auto -3rem;
+  padding-top: 10rem;
+}
+
+#menukaart .menukaartcontainermobrowone, #menukaart .menukaartcontainermobrowtwo {
+	margin: 0 auto 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menukaart .menukaartcontainermobrowtwo {
+  margin-bottom: 3vw;
+}
+
+#menukaart img {
+	border: 3px solid #f88379;
+}
+
+#menukaart .menukaartcontainermobrowone img {
+	width: 49%;
+}
+
+#menukaart .menukaartcontainermobrowtwo img {
+  width: 32%;
+}
+
+#menukaart .menukaartcontainerfs {
+  display: none;
+}
+*/
+/* MENUKAART */
+
+
+
+/* INSTAGRAM */
+#instagram {
+	width: 95vw;
+  max-width: 100rem;
+  margin: 0 auto -3rem;
+  padding-top: 10rem;
+}
+/* INSTAGRAM */
+
+
+
+/* CONTACT */
+#contact {
+	width: 95vw;
+  max-width: 100rem;
+  margin: 0 auto 6rem;
+  padding-top: 10rem;
+}
+
+.socials {
+	height: 7rem;
+  width: 75vw;
+  margin: 0 auto 3rem;
+	display: flex;
+	justify-content: space-around;
+}
+
+.socials a {
+	width: 7rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  transition: all .2s;
+}
+
+.socials a:nth-of-type(1) {
+	background-image: url(afbeeldingen/socials/instanormal.svg);
+}
+.socials a:nth-of-type(2) {
+	background-image: url(afbeeldingen/socials/fbnormal.svg);
+}
+.socials a:nth-of-type(3) {
+	background-image: url(afbeeldingen/socials/pinnormal.svg);
+}
+.socials a:nth-of-type(4) {
+	background-image: url(afbeeldingen/socials/linknormal.svg);
+}
+.socials a:hover {
+  border-bottom: 0;
+}
+.socials a:nth-of-type(1):hover {
+	background-image: url(afbeeldingen/socials/instainvert.svg);
+}
+.socials a:nth-of-type(2):hover {
+	background-image: url(afbeeldingen/socials/fbinvert.svg);
+}
+.socials a:nth-of-type(3):hover {
+	background-image: url(afbeeldingen/socials/pininvert.svg);
+}
+.socials a:nth-of-type(4):hover {
+	background-image: url(afbeeldingen/socials/linkinvert.svg);
+}
+
+form {
+  height: 65rem;
+  font-size: 2rem;
+  border: 3px solid #f88379;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+legend {
+  margin-bottom: 2rem;
+}
+
+label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+input {
+  width: 100%;
+  height: 3rem;
+  padding: .5rem;
+  margin-bottom: 1.5rem;
+}
+
+textarea {
+  width: 100%;
+  height: 10rem;
+  resize: none;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.gevonden {
+  height: 6rem;
+  padding: .5rem;
+}
+
+.submit {
+  display: block;
+  width: 20rem;
+  margin: 3rem auto 2rem;
+  height: 5rem;
+  font-size: 3rem;
+  background-color: #f88379;
+  border-radius: 2.5rem;
+  cursor: pointer;
+  transition: all .7s;
+  color: white;
+}
+
+.submit:hover {
+  text-decoration: underline;
+}
+
+#contact p {
+  margin-bottom: 2rem;
+}
+
+#contact p:nth-of-type(4) {
+  margin-bottom: 3rem;
+}
+
+#contact p a {
+  text-decoration: none;
+  color: black;
+  transition: all .7s;
+}
+
+#contact p a:hover {
+  text-decoration: underline;
+}
+
+#contact iframe {
+	width: 100%;
+	height: 30rem;
+}
+/* CONTACT */
+/* MAIN */
+
+
+
+
+
+/* FOOTER */
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+  background-color: #f88379;
+  padding: 1rem;
+}
+
+footer .infofooter {
+	text-align: center;
+  font-size: 1rem;
+  color: white;
+  font-family: sans-serif;
+}
+
+footer .infofooter a {
+  color: white;
+  text-decoration: none;
+  transition: all .7s;
+}
+
+footer .infofooter a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 1rem;
+}
+/* FOOTER */
+
+
+
+
+
+
+
+
+
+
+@supports (grid-area: auto) {
+	@media (min-width: 1000px) {
+
+
+/* * */
+h2 {
+	font-size: 3rem;
+}
+
+.calltoaction {
+	font-size: 3rem;
+}
+
+p {
+	font-size: 2rem;
+  line-height: 2.5rem;
+}
+/* * */
+
+
+
+/* HEADER */
+.burger {
+  display: none;
+}
+
+.headmenufs {
+  display: inline;
+  margin-right: 4rem;
+}
+
+.headmenufs a {
+  color: white;
+  font-size: 2rem;
+  font-family: sans-serif;
+  margin-left: 3rem;
+  text-decoration: none;
+}
+
+.headmenufs a:hover {
+  text-decoration: underline;
+}
+
+.submenufs {
+  position: fixed;
+  top: 6rem;
+  right: 25.1rem;
+  z-index: 3;
+}
+
+.submenufs a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
+  background-color: white;
+  height: 4rem;
+  width: 18rem;
+  margin: 0 auto .2rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  border: 1px solid #f88379;
+}
+
+.submenufs a:hover {
+  background-color: #f88379;
+  border: 1px solid white;
+}
+/* HEADER */
+
+
+
+
+
+/* MAIN */
+/* FLOWERSLIDER */
+#flowerslider {
+  max-width: 100vw;
+}
+/* FLOWERSLIDER */
+
+/* INBAR, BLOEMIST, BOEKETTEN, VORMEN, JUWELEN, HUWELIJK, EVENTS & WORKSHOPS */
+#inbar, #bloemist, #boeketten, #vormen, #juwelen, #huwelijk, #events, #workshops {
+  max-width: 95vw;
+  height: 45vw;
+  margin-bottom: 10rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-gap: 5vw;
+}
+
+#inbar .outerframe, #bloemist .outerframe, #boeketten .outerframe, #vormen .outerframe, #juwelen .outerframe, #huwelijk .outerframe, #events .outerframe, #workshops .outerframe {
+	height: 45vw;
+  max-height: 45vw;
+}
+
+#inbar .innerframe, #bloemist .innerframe, #boeketten .innerframe, #vormen .innerframe, #juwelen .innerframe, #huwelijk .innerframe, #events .innerframe, #workshops .innerframe {
+  height: 45vw;
+  max-height: 45vw;
+}
+
+.placedright {
+  grid-column: 2;
+}
+
+.placedleft {
+  grid-row: 1;
+}
+/* INBAR, BLOEMIST, BOEKETTEN, VORMEN, JUWELEN, HUWELIJK, EVENTS & WORKSHOPS */
+
+
+/* MENUKAART */
+/*
+#menukaart {
+  max-width: 95vw;
+}
+
+#menukaart .menukaartcontainermob {
+  display: none;
+}
+
+#menukaart .menukaartcontainerfs {
+  display: grid;
+  width: 100%;
+  height: 80vw;
+  grid-gap: .5vw;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+}
+
+.menukaartcontainerfs div {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid #f88379;
+}
+
+.menukaartcontainerfs div:nth-of-type(1) {
+  background-image: url(afbeeldingen/collage/collage1.jpg);
+  grid-column: 1;
+  grid-row: 1;
+}
+.menukaartcontainerfs div:nth-of-type(2) {
+  background-image: url(afbeeldingen/collage/collage2.jpg);
+  grid-column: 1;
+  grid-row: 2;
+}
+.menukaartcontainerfs div:nth-of-type(3) {
+  background-image: url(afbeeldingen/collage/collage3.jpg);
+  grid-column: 1;
+  grid-row: 3;
+}
+.menukaartcontainerfs div:nth-of-type(4) {
+  background-image: url(afbeeldingen/collage/collage4.jpg);
+  grid-column: 1;
+  grid-row: 4;
+}
+.menukaartcontainerfs div:nth-of-type(5) {
+  background-image: url(afbeeldingen/collage/collage5.jpg);
+  grid-column: 1;
+  grid-row: 5;
+}
+.menukaartcontainerfs div:nth-of-type(6) {
+  background-image: url(afbeeldingen/collage/collage6.jpg);
+  grid-column: 1;
+  grid-row: 6;
+}
+.menukaartcontainerfs div:nth-of-type(7) {
+  background-image: url(afbeeldingen/collage/collage7.jpg);
+  grid-column: 2;
+  grid-row: 1/3;
+}
+.menukaartcontainerfs div:nth-of-type(8) {
+  background-image: url(afbeeldingen/collage/collage8.jpg);
+  grid-column: 2;
+  grid-row: 3;
+}
+.menukaartcontainerfs div:nth-of-type(9) {
+  background-image: url(afbeeldingen/collage/collage9.jpg);
+  grid-column: 2;
+  grid-row: 4;
+}
+.menukaartcontainerfs div:nth-of-type(10) {
+  background-image: url(afbeeldingen/collage/collage10.jpg);
+  grid-column: 2;
+  grid-row: 5/7;
+}
+.menukaartcontainerfs div:nth-of-type(11) {
+  background-image: url(afbeeldingen/collage/collage11.jpg);
+  grid-column: 3;
+  grid-row: 1;
+}
+.menukaartcontainerfs div:nth-of-type(12) {
+  background-image: url(afbeeldingen/collage/collage12.jpg);
+  grid-column: 3;
+  grid-row: 2;
+}
+.menukaartcontainerfs div:nth-of-type(13) {
+  background-image: url(afbeeldingen/collage/collage13.jpg);
+  grid-column: 3;
+  grid-row: 3;
+}
+.menukaartcontainerfs div:nth-of-type(14) {
+  background-image: url(afbeeldingen/collage/collage14.jpg);
+  grid-column: 3;
+  grid-row: 4;
+}
+.menukaartcontainerfs div:nth-of-type(15) {
+  background-image: url(afbeeldingen/collage/collage15.jpg);
+  grid-column: 3;
+  grid-row: 5;
+}
+.menukaartcontainerfs div:nth-of-type(16) {
+  background-image: url(afbeeldingen/collage/collage16.jpg);
+  grid-column: 3;
+  grid-row: 6;
+}
+.menukaartcontainerfs div:nth-of-type(17) {
+  background-image: url(afbeeldingen/collage/collage17.jpg);
+  grid-column: 4;
+  grid-row: 1/3;
+}
+.menukaartcontainerfs div:nth-of-type(18) {
+  background-image: url(afbeeldingen/collage/collage18.jpg);
+  grid-column: 4;
+  grid-row: 3;
+}
+.menukaartcontainerfs div:nth-of-type(19) {
+  background-image: url(afbeeldingen/collage/collage19.jpg);
+  grid-column: 4;
+  grid-row: 4;
+}
+.menukaartcontainerfs div:nth-of-type(20) {
+  background-image: url(afbeeldingen/collage/collage20.jpg);
+  grid-column: 4;
+  grid-row: 5/7;
+}
+*/
+/* MENUKAART */
+
+
+/* INSTAGRAM */
+#instagram {
+  margin-bottom: 10rem;
+}
+/* INSTAGRAM */
+
+
+/* CONTACT */
+#contact {
+  max-width: 95vw;
+}
+
+.contactgrid {
+  width: 100%;
+  height: 65rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 35rem 30rem;
+  grid-column-gap: 5vw;
+}
+
+.contactgridrightcolund {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+/* CONTACT */
+/* MAIN */
+
+
+/* * */
+/* * */
+	}
+}
